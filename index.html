@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <title>Fuit Brust | Hasib Muhammad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css"
       rel="stylesheet"
@@ -23,13 +36,19 @@
         },
       };
     </script>
-    <style></style>
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <header class="container mx-auto">
-      <div class="navbar bg-base-100">
+  <body class="font-lato">
+    <header class="container mx-auto p-4">
+      <div
+        class="lg:px-12 py-6 bg-primary rounded-full navbar bg-base-100 justify-center lg:justify-normal"
+      >
         <div class="navbar-start hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
+          <ul class="menu menu-horizontal px-1 text-white">
             <li><a>Home</a></li>
             <li><a>About Us</a></li>
             <li><a>Shop</a></li>
@@ -38,7 +57,7 @@
         </div>
         <div class="navbar-center">
           <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <label tabindex="0" class="text-white btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -62,12 +81,32 @@
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
               <li><a>All Fruits</a></li>
+              <div class="relative">
+                <input
+                  class="w-full lg:w-1/2 px-7 py-4 rounded-full"
+                  type="search"
+                  name=""
+                  id=""
+                  placeholder="Search here"
+                /><i
+                  class="absolute right-5 top-5 fa-solid fa-magnifying-glass"
+                ></i>
+              </div>
             </ul>
           </div>
-          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <div class="flex justify-center items-center gap-4">
+            <img class="w-10" src="./images/logo.png" alt="" />
+            <a class="normal-case text-xl font-bold text-white">Fruit Brust</a>
+          </div>
         </div>
-        <div class="navbar-end">
-          <a class="btn">Button</a>
+        <div class="navbar-end hidden lg:flex relative">
+          <input
+            class="w-full lg:w-1/2 px-7 py-4 rounded-full"
+            type="search"
+            name=""
+            id=""
+            placeholder="Search here"
+          /><i class="absolute right-5 top-5 fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
     </header>
