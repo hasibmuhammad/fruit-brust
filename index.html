@@ -30,9 +30,8 @@
           extend: {
             colors: {
               primary: "#F85559",
-              secon: "rgba(18, 18, 18, 0.6)",
-              from: "#121212",
-              to: "rgba(18, 18, 18, 0.00) ",
+              "fruit-secondary": "rgba(18, 18, 18, 0.6)",
+              "fruit-black": "#121212",
             },
           },
         },
@@ -248,5 +247,67 @@
         </div>
       </div>
     </header>
+    <!-- Deal of the Day -->
+    <section class="container mx-auto p-4">
+      <div class="flex justify-between items-center">
+        <div class="space-y-4">
+          <h3 class="font-extrabold text-5xl">Deal of the day</h3>
+          <p class="text-fruit-secondary">
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical <br />
+            Latin literature from 45 BC, making it over 2000 years old.
+          </p>
+        </div>
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="flex items-center gap-4">
+            <div class="flex flex-col">
+              <span class="countdown text-5xl font-extrabold">
+                <span style="--value: 29"></span>
+              </span>
+              Days
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="w-1 h-1 bg-fruit-black rounded-full"></div>
+              <div class="w-1 h-1 bg-fruit-black rounded-full"></div>
+              <div class="w-1 h-1 bg-fruit-black rounded-full"></div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="flex flex-col">
+              <span class="countdown text-5xl font-extrabold">
+                <span style="--value: 15"></span>
+              </span>
+              Hours
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="w-1 h-1 bg-fruit-black rounded-full"></div>
+              <div class="w-1 h-1 bg-fruit-black rounded-full"></div>
+              <div class="w-1 h-1 bg-fruit-black rounded-full"></div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="flex flex-col">
+              <span class="countdown text-5xl font-extrabold">
+                <span style="--value: 25"></span>
+              </span>
+              Minutes
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="w-1 h-1 bg-fruit-black rounded-full"></div>
+              <div class="w-1 h-1 bg-fruit-black rounded-full"></div>
+              <div class="w-1 h-1 bg-fruit-black rounded-full"></div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="flex flex-col">
+              <span class="countdown text-5xl font-extrabold">
+                <span style="--value: 08"></span>
+              </span>
+              Seconds
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
